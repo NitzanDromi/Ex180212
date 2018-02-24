@@ -25,33 +25,19 @@ public class MainActivity extends AppCompatActivity {
         gb=(Switch) findViewById(R.id.switch2);
     }
 
-    /*public void redyellow(View view) {
-        if (ry.isChecked())
-            bg.setBackgroundColor(Color.RED);
-        else
-            bg.setBackgroundColor(Color.YELLOW);
-
-    }
-
-    public void greenblue(View view) {
-        if (gb.isChecked())
-            bg.setBackgroundColor(Color.GREEN);
-        else
-            bg.setBackgroundColor(Color.BLUE);
-    }*/
 
     public void change(View view) {
         if ((gb.isChecked())&& (!ry.isChecked()))
             bg.setBackgroundColor(Color.GREEN);
         else {
             if ((ry.isChecked()) && (!gb.isChecked()))
-                bg.setBackgroundColor(Color.BLUE);
+                bg.setBackgroundColor(Color.YELLOW);
             else {
                 if ((ry.isChecked() && (gb.isChecked())))
-                    bg.setBackgroundColor(Color.YELLOW);
+                    bg.setBackgroundColor(Color.RED);
                 else {
                     if ((!gb.isChecked()) && (!ry.isChecked()))
-                        bg.setBackgroundColor(Color.RED);
+                        bg.setBackgroundColor(Color.BLUE);
                 }
             }
         }
