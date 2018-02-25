@@ -9,14 +9,10 @@
     android:id="@+id/bkgn"
     tools:context="com.example.user.ex180212.MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Green or Blue"
-        android:gravity="center"
-        android:textSize="18dp"/>
+        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,15 +72,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:textSize="18dp"
-        android:text="Red or Yellow" />
 
     <LinearLayout
         android:layout_width="match_parent"
